@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial for the Diddy Files - CAPTCHA Comedy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen" class="screen">
+        <div class="welcome-container">
+            <h1>🎭 WELCOME TO THE DIDDY FILES TRIAL 🎭</h1>
+            <p>You have been selected for a special trial.</p>
+            <p>Click the button below to begin your journey...</p>
+            <button onclick="startTrial()" class="start-btn">ENTER THE TRIAL</button>
+        </div>
+    </div>
+
+    <div id="captcha-container" class="screen hidden">
+        <div class="captcha-wrapper">
+            <h2 id="trial-title">Trial 1: Normal CAPTCHA</h2>
+            <div id="captcha-content"></div>
+            <button onclick="nextTrial()" class="submit-btn">NEXT TRIAL</button>
+        </div>
+    </div>
+
+    <div id="victory-screen" class="screen hidden">
+        <div class="victory-container">
+            <h1>🎉 YOU SURVIVED THE DIDDY FILES TRIAL 🎉</h1>
+            <p>Congratulations! You have conquered all 10 trials!</p>
+            <button onclick="location.reload()" class="restart-btn">RESTART TRIAL</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
